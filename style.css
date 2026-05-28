@@ -1,5 +1,184 @@
-body{
-    background-color: #333;
-    color: #fff;
-    font-family: Arial, sans-serif;
+/* ============================================
+   InternTrack - style.css
+   ============================================ */
+
+/* Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+}
+
+/* ============================================
+   Status Badges
+   ============================================ */
+.badge-status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.badge-Applied {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.badge-Phone\ Screen {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge-Technical {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge-Offer {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.badge-Rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* ============================================
+   Stats Bar
+   ============================================ */
+.stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stat-pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+.applied-pill   { background-color: #cce5ff; color: #004085; border-color: #b8daff; }
+.phone-pill     { background-color: #fff3cd; color: #856404; border-color: #ffeeba; }
+.technical-pill { background-color: #d4edda; color: #155724; border-color: #c3e6cb; }
+.offer-pill     { background-color: #28a745; color: #ffffff; border-color: #28a745; }
+.rejected-pill  { background-color: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+
+/* ============================================
+   Filter Bar
+   ============================================ */
+.filter-bar .form-control {
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 8px 12px;
+}
+
+/* ============================================
+   Add Application Card
+   ============================================ */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 0 0 12px 12px;
+}
+
+/* ============================================
+   Application List Items
+   ============================================ */
+.list-group-item {
+  border-radius: 10px !important;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.list-group-item:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.app-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ============================================
+   Edit Form
+   ============================================ */
+.edit-form {
+  background-color: #f8f9fa;
+  border: 1px dashed #ced4da;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.btn-primary {
+  background-color: #1a1a2e;
+  border-color: #1a1a2e;
+}
+
+.btn-primary:hover {
+  background-color: #16213e;
+  border-color: #16213e;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 576px) {
+  .stats-bar {
+    flex-direction: column;
+  }
+
+  .app-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .filter-bar .form-control {
+    max-width: 100%;
+  }
 }
