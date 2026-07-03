@@ -25,7 +25,9 @@ app.use(methodOverride(function (req, res) {
  
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
- 
+
+app.set('views', path.join(__dirname, 'views'));
+
 // ── Handlebars setup ───────────────────────────────────────────────────────────
 const hbs = exphbs.create({
   defaultLayout: 'main',
